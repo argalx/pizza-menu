@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom/client";
+import "./index.css";
 
 // Pizza Data Array
 const pizzaData = [
@@ -50,7 +51,7 @@ const pizzaData = [
 // App Component (Base Component)
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
@@ -60,18 +61,25 @@ function App() {
 
 // Header Component
 function Header() {
-  return <h1>Fast React Pizza Co.</h1>;
+  // const style = { color: "red", fontSize: "48px", textTransform: "uppercase" };
+  const style = {};
+
+  return (
+    <header className="header">
+      <h1 style={style}>Fast React Pizza Co.</h1>
+    </header>
+  );
 }
 
 // Menu Component
 function Menu() {
   return (
-    <div>
+    <main className="menu">
       <h2>Our menu</h2>
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
+    </main>
   );
 }
 
@@ -87,7 +95,9 @@ function Footer() {
   // else alert("Sorry we're closed");
 
   return (
-    <footer>{new Date().toLocaleDateString()} We're currently open</footer>
+    <footer className="footer">
+      {new Date().toLocaleDateString()} We're currently open
+    </footer>
   );
 
   // Old way of manipulating DOM
@@ -99,7 +109,7 @@ function Pizza() {
   return (
     <div>
       <img src="pizzas/spinaci.jpg" alt="Pizza Spinaci" />
-      <h2>Pizza Spinaci</h2>
+      <h3>Pizza Spinaci</h3>
       <p>Tomato, mozarella, spinach, and ricotta cheese</p>
     </div>
   );
