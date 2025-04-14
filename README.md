@@ -1,6 +1,8 @@
 # Pizza Menu
 
-## Udemy React JS Training Course Mini Project
+## Description
+
+Udemy React JS Training Course Mini Project
 
 ## Component Tree
 
