@@ -1,3 +1,11 @@
+# Pizza Menu
+
+## Udemy React JS Training Course Mini Project
+
+## Component Tree
+
+![alt text](public/ComponentTree.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
